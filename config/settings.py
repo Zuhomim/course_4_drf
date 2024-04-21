@@ -43,6 +43,10 @@ INSTALLED_APPS = [
 
     'habits',
     'users',
+    'rest_framework',
+    'django_filters',
+    'drf_yasg',
+    "django_celery_beat",
 ]
 
 MIDDLEWARE = [
@@ -85,6 +89,7 @@ DATABASES = {
         'NAME': os.getenv('DATABASE_NAME'),
         'USER': os.getenv('DATABASE_USER'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'HOST': os.getenv('DATABASE_HOST'),
     }
 }
 
